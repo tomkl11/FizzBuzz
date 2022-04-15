@@ -1,41 +1,35 @@
-#include <stdio.h>
+#include <stdio.h> 
 
-#include <stdlib.h>
+#include <stdlib.h> 
 
+ 
 
+int main (void) { 
 
-#define FIZZ "Fizz"
+    for (int i = 1; i <= 100; i++) { 
 
-#define BUZZ "Buzz"
+        if (i % 15 == 0) { 
 
+            printf ("FizzBuzz\n"); 
 
+        } else if (i % 3 == 0) { 
 
-int main (void) {
+            printf ("UwU\n"); 
 
-    for (int i = 1; i <= 100; i++) {
+        } else if (i % 5 == 0) { 
 
-        if (i % 15 == 0) {
+            printf ("Buzz\n"); 
 
-            printf ("%s%s\n", FIZZ, BUZZ);
+        } else { 
 
-        } else if (i % 3 == 0) {
+            printf ("%d\n", i); 
 
-            printf ("%s\n", FIZZ);
+        } 
 
-        } else if (i % 5 == 0) {
+    } 
 
-            printf ("%s\n", BUZZ);
+ 
 
-        } else {
-
-            printf ("%d\n", i);
-
-        }
-
-    }
-
-
-
-    return EXIT_SUCCESS;
+    return EXIT_SUCCESS; 
 
 } 
